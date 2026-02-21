@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Beauties is your beauty and cosmetics destination for skincare, makeup, and self-care essentials with a premium shopping experience."
+    />
+    <meta
+      name="keywords"
+      content="beauty products, cosmetics, skincare, makeup, online shopping, beauties"
+    />
+    <meta name="author" content="Beauties" />
+    <title>Beauties | Beauty & Cosmetics Shopping</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main website wrapper -->
+    <div class="site-wrapper">
+      <!-- Navigation section -->
+      <header>
+        <nav class="navbar" aria-label="Primary">
+          <a class="brand" href="#" aria-label="Beauties Home">
+            <!-- Self describing logo -->
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img" aria-label="Beauties logo">
+                <defs>
+                  <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff5fa2" />
+                    <stop offset="100%" stop-color="#f7a8d5" />
+                  </linearGradient>
+                </defs>
+                <circle cx="60" cy="60" r="55" fill="#fff" stroke="#ff5fa2" stroke-width="6" />
+                <path
+                  d="M60 23C74 33 80 50 60 68C40 50 46 33 60 23Z"
+                  fill="url(#petalGradient)"
+                />
+                <path
+                  d="M31 62C43 47 60 45 72 62C60 81 43 81 31 62Z"
+                  fill="#ff77b6"
+                  opacity="0.88"
+                />
+                <circle cx="60" cy="63" r="8" fill="#fff" stroke="#ff5fa2" stroke-width="3" />
+              </svg>
+            </span>
+            <span class="brand-text">beauties</span>
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#recommended">Recommended</a></li>
+            <li><a href="#footer">Support</a></li>
+          </ul>
+
+          <div class="nav-actions" aria-label="User shortcuts">
+            <button type="button" aria-label="Search products">🔍</button>
+            <button type="button" aria-label="View wishlist">♡</button>
+            <button type="button" aria-label="View cart">🛒</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero section explains website purpose -->
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <p class="eyebrow">Glow With Confidence</p>
+            <h1 id="hero-title">Beauty and cosmetics curated for every skin tone.</h1>
+            <p>
+              Discover premium skincare, vibrant makeup shades, and essential beauty tools in one
+              seamless shopping experience.
+            </p>
+            <a href="#products" class="hero-cta">Shop Featured Product</a>
+          </div>
+          <div class="hero-media">
+            <img
+              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80"
+              alt="A curated beauty and cosmetics display featuring makeup brushes and products"
+            />
+          </div>
+        </section>
+
+        <!-- Product display section -->
+        <section id="products" class="product-section" aria-labelledby="product-title">
+          <article class="product-card">
+            <div class="product-gallery" aria-label="Product images and thumbnails">
+              <img
+                id="mainProductImage"
+                class="main-product-image"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"
+                alt="Velvet matte lipstick in rose pink shade"
+              />
+
+              <!-- Thumbnail carousel for product preview -->
+              <div class="thumbnail-carousel" role="list" aria-label="Product image options">
+                <button
+                  class="thumb active"
+                  type="button"
+                  data-image="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"
+                  aria-label="View image one"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=200&q=80"
+                    alt="Lipstick front view"
+                  />
+                </button>
+                <button
+                  class="thumb"
+                  type="button"
+                  data-image="https://images.unsplash.com/photo-1583241800698-47f9963d5d83?auto=format&fit=crop&w=900&q=80"
+                  aria-label="View image two"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1583241800698-47f9963d5d83?auto=format&fit=crop&w=200&q=80"
+                    alt="Lipstick and compact combo"
+                  />
+                </button>
+                <button
+                  class="thumb"
+                  type="button"
+                  data-image="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80"
+                  aria-label="View image three"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=200&q=80"
+                    alt="Cosmetic products arranged on pink background"
+                  />
+                </button>
+                <button
+                  class="thumb"
+                  type="button"
+                  data-image="https://images.unsplash.com/photo-1526758097130-bab247274f58?auto=format&fit=crop&w=900&q=80"
+                  aria-label="View image four"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1526758097130-bab247274f58?auto=format&fit=crop&w=200&q=80"
+                    alt="Luxury lipstick case"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="product-details">
+              <p class="product-tag">Best Seller</p>
+              <h2 id="product-title">Velvet Bloom Matte Lipstick</h2>
+              <p class="stock in-stock">In Stock · 84 units available</p>
+              <p class="price">₹1,299</p>
+              <p class="description">
+                Long-wear, hydrating matte lipstick with rich pigment payoff and feather-light feel
+                for all-day elegance.
+              </p>
+              <div class="color-palette" aria-label="Available shades">
+                <span>Shades:</span>
+                <span class="color-dot" style="--shade:#c63a68" title="Rose Desire"></span>
+                <span class="color-dot" style="--shade:#ad214d" title="Berry Bloom"></span>
+                <span class="color-dot" style="--shade:#e17ca3" title="Petal Nude"></span>
+                <span class="color-dot" style="--shade:#5d1e2c" title="Wine Muse"></span>
+              </div>
+
+              <div class="product-actions" aria-label="Purchase actions">
+                <button type="button" class="btn primary">🛒 Add to Cart</button>
+                <button type="button" class="btn secondary">♡ Add to Wishlist</button>
+              </div>
+
+              <ul class="product-highlights">
+                <li>✔ Dermatologically tested</li>
+                <li>✔ Cruelty-free formula</li>
+                <li>✔ Free shipping on orders above ₹999</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <!-- AI recommendation section -->
+        <section id="recommended" class="recommended" aria-labelledby="recommended-title">
+          <div class="section-title-wrap">
+            <h3 id="recommended-title">Recommended for You</h3>
+            <p>Powered by AI insights from browsing and purchase preferences.</p>
+          </div>
+
+          <div class="recommendation-grid">
+            <article class="recommendation-item">
+              <img
+                src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=500&q=80"
+                alt="Hydrating serum bottle"
+              />
+              <h4>Hydra Dew Serum</h4>
+              <p>₹1,799</p>
+            </article>
+            <article class="recommendation-item">
+              <img
+                src="https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=500&q=80"
+                alt="Face palette set"
+              />
+              <h4>Glow Face Palette</h4>
+              <p>₹2,149</p>
+            </article>
+            <article class="recommendation-item">
+              <img
+                src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=500&q=80"
+                alt="Beauty foundation bottle"
+              />
+              <h4>Silk Touch Foundation</h4>
+              <p>₹1,499</p>
+            </article>
+            <article class="recommendation-item">
+              <img
+                src="https://images.unsplash.com/photo-1631214540242-2a698f23f8ec?auto=format&fit=crop&w=500&q=80"
+                alt="Luxury perfume bottle"
+              />
+              <h4>Bloom Veil Mist</h4>
+              <p>₹2,599</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer with useful navigation links -->
+      <footer id="footer">
+        <div class="footer-columns">
+          <section>
+            <h5>Company</h5>
+            <a href="#">About Beauties</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </section>
+          <section>
+            <h5>Customer Care</h5>
+            <a href="#">Contact Us</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Refunds</a>
+          </section>
+          <section>
+            <h5>Policies</h5>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Shipping Policy</a>
+          </section>
+        </div>
+        <p class="copyright">© 2026 Beauties. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
